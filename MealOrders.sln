@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MealOrdersAPI", "MealOrdersAPI\MealOrdersAPI.csproj", "{24B39005-32A9-4C65-A75A-1546DEE13A8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MealOrders.Application", "MealOrders.Application\MealOrders.Application.csproj", "{CA197A2B-C879-4540-966C-8580E6EAFB79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24B39005-32A9-4C65-A75A-1546DEE13A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B39005-32A9-4C65-A75A-1546DEE13A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B39005-32A9-4C65-A75A-1546DEE13A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B39005-32A9-4C65-A75A-1546DEE13A8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA197A2B-C879-4540-966C-8580E6EAFB79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA197A2B-C879-4540-966C-8580E6EAFB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA197A2B-C879-4540-966C-8580E6EAFB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA197A2B-C879-4540-966C-8580E6EAFB79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD9A942C-3EB2-43F6-A2E9-F5A2687A1ED5}
+	EndGlobalSection
+EndGlobal
