@@ -39,19 +39,20 @@ namespace MealOrders.Application.Repositories
 
             for (int i = 1; i < data.Length; i++)
             {
-                if (i <= meal.options.Count)
+                int numItem = Convert.ToInt16(data[i]);
+                if (numItem <= meal.options.Count)
                 {
-                    response += meal.options[Convert.ToInt16(data[i]) - 1].ToString();
+                    response += meal.options[numItem - 1].ToString();
                     response += ", "; 
                 }
                 else
                 {
                     response += "item unavailable";
-                    response += ", ";
+                    response += ",";
                 }
             }
 
-            response = response.Remove(response.Length - 2);
+            response = response.Remove(response.Length - 1);
 
             return Task.FromResult(response);
         }
