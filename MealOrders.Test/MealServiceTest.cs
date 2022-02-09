@@ -9,7 +9,7 @@ namespace MealOrders.Test
 {
     public class MealServiceTest
     {
-        protected readonly MealService _mealService;
+        protected  MealService _mealService;
         private readonly Mock<IMealRepository> _mealRepositoryMock;
 
         public MealServiceTest()
@@ -23,8 +23,13 @@ namespace MealOrders.Test
         {
             //arrange
             string input = "morning, 1, 2, 3, 3, 3";
+            var data = input.Replace(" ", "").ToLower().Split(',');
+            //_mealRepositoryMock
+            //    .Setup(x => x.GetMeal(data))
+            //    .Returns("eggs, toast, coffee(3x)");
 
-            //act          
+            //act
+            _mealService = new MealService(_mealRepositoryMock.Object);
             var resultado = await _mealService.GetMeal(input);
             
             //assert 
@@ -36,7 +41,7 @@ namespace MealOrders.Test
         {
             //arrange
             string input = "5, 1, 2, 3, 3, 3";
-
+            
             //act
             var resultado = await _mealService.GetMeal(input);
 

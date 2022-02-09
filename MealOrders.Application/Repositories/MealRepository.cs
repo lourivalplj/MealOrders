@@ -32,7 +32,7 @@ namespace MealOrders.Application.Repositories
 
             meals.Add(new Meal(name, options));
         }
-        public Task<string> GetMeal(string[] data)
+        public async Task<string> GetMeal(string[] data)
         {
             string response = null;
             Meal meal = meals.Find(x => x.name == data[0]);
@@ -54,7 +54,7 @@ namespace MealOrders.Application.Repositories
 
             response = response.Remove(response.Length - 1);
 
-            return Task.FromResult(response);
+            return await Task.FromResult(response);
         }
     }
 }
