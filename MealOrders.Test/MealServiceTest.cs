@@ -15,9 +15,7 @@ namespace MealOrders.Test
         public MealServiceTest()
         {
             _mealRepositoryMock = new Mock<IMealRepository>();
-            _mealService = new MealService(_mealRepositoryMock.Object);
-
-            
+            _mealService = new MealService(_mealRepositoryMock.Object);            
         }
 
         [Fact]
